@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>viewmore</title>
+  <!--font awesome link-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href='/static/viewmore.css' />
+</head>
+
+<body>
+ 
+
+   
+    {% for det in detai %} <hr>
+    
+    
+    <div class="row-container">
+
+      
+      <div class="image"> Image:<img src="https://images.pexels.com/photos/102728/pexels-photo-102728.jpeg?auto=compress&cs=tinysrgb&w=600" height="50%" width="50%"/>
+        <div class="price">
+        </div>
+     
+      <span>Name: {{det.name}}</span>
+
+
+
+      <span> Price: {{det.price}}</span>
+
+      
+      
+
+
+        
+        <span>location: {{det.location}}</span>
+
+      
+        
+          <span>Contact no: {{det.contact_no}}</span>
+
+      
+           
+            <span>Area: {{det.area}}</span>
+
+           
+            <span>Surroundings of your lands: {{det.surround}}</span>
+
+
+       
+             <span>Do you have ownership on your land: {{det.owner}}</span>
+
+ 
+             
+              <span>Do you have any debt n your land: {{det.debt}}</span>
+
+
+               
+               <span>Type of your land:
+                        {{det.type}}</span>
+
+
+                
+                <span>Subject: {{det.subject}}</span>
+              </div> 
+              <button type="button" onclick="myFunction()" class="button btn item6"><span> <a href="/index2">Contact me</span></a></button></div>
+
+                      {% endfor %}
+                 
+                     
+
+</body>
+<script>
+  function myFunction() {
+    alert("Land loard will contact you!");
+  }
+  </script>
+  
+</html>

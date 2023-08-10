@@ -1,0 +1,132 @@
+{% extends "layout2.html" %}
+{% block body %}
+
+<style>
+   
+   
+    
+    /* Add padding to containers */
+    .container {
+      padding: 16px;
+      background-color: white;
+    }
+    
+    /* Full-width input fields */
+    input[type=text], input[type=password] , input[type=textarea]{
+      width: 100%;
+      padding: 15px;
+      margin: 5px 0 22px 0;
+      display: inline-block;
+      border: none;
+      background: #f1f1f1;
+    }
+    
+    input[type=text]:focus, input[type=password]:focus, input[type=tel]:focus, input[type=file]:focus {
+      background-color: #ddd;
+      outline: none;
+    }
+    
+    /* Overwrite default styles of hr */
+    hr {
+      border: 1px solid #f1f1f1;
+      margin-bottom: 25px;
+    }
+    
+    /* Set a style for the submit button */
+    .landlordbtn {
+      background-color: darkblue;
+      color: white;
+      padding: 16px 20px;
+      margin: 8px 0;
+      border: none;
+      cursor: pointer;
+      width: 100%;
+      opacity: 0.9;
+    }
+    
+    .landlordbtn:hover {
+      opacity: 1;
+    }
+    
+    /* Add a blue text color to links */
+    a {
+      color: dodgerblue;
+    }
+    
+    h1 , p{
+        text-align: center;
+    }
+    </style>
+<body>
+  
+
+        
+<form action="/landlord" method ="post">
+    <div class="container">
+      <h1>LANDLORD</h1>
+      <p>Please fill in this form for Renting you land.</p>
+     
+  
+      <label for="name"><b>Name</b></label>
+      <input type="text" placeholder="Enter Name" name="name" id="name" required>
+  
+      <label for="name"><b>Location</b></label>
+      <input type="text" placeholder="Enter Location" name="location" id="Location" required>
+  
+      <label for="phone"><b>Contact no</b></label>
+      <input type="text" placeholder="contact no" name="contact_no" id="contact no" required></br></br>
+      
+      <label for="name"><b> Area of your land</b></label>
+      <input type="text" placeholder="Area in sqft" name="area" id="area" required>
+
+      <label for="name"><b>Surroundings of your lands</b></label>
+      <input type="text" placeholder="Surroundings of your lands" name="surround" id="surround" required>
+      
+      <label for="name"><b> Price of your land for rent</b></label>
+      <input type="text" placeholder="Price in rupee" name="price" id="price" required>
+
+        <label for="text">Are you the owner of your Land:</label>
+        <select name="owner" id="text">
+          <option value="Yes">Yes</option>
+          <option value="No">No</option>
+        </select>
+<br><br><br>
+
+    
+      <label for="text">Does your land in a debt:</label>
+      <select name="debt" id="text">
+        <option value="Yes">Yes</option>
+        <option value="No">No</option>
+      </select>  <br><br><br>
+
+      <label for="text">Type of your Land:</label>
+<select name="type" id="text">
+  <option value="Black">Black</option>
+  <option value="Red">Red</option>
+  <option value="Clay">Clay</option>
+  <option value="Loamy">Loamy</option>
+  <option value="Silty">Silty</option>
+  <option value="Peaty">Peaty</option>
+  <option value="Sandy">Sandy</option>
+</select>
+<br><br><br>
+   
+  
+      <label for="img">Select image of your land:</label>
+      <input type="file" id="img" name="img" accept="image/png"><br><br>
+
+      <label for="text">Description of your Land:</label>
+      <textarea id="subject" name="subject" rows="4" cols="50"></textarea>
+      <br>
+      
+    
+      <a href="/index2"> <button type="submit" class="landlordbtn">Submit</button> </a>
+    </div>
+    
+  
+  </form>
+  
+  </body>
+  </body>
+  </html>
+  {% endblock %}

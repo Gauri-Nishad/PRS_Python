@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&family=Poppins:wght@500;600&display=swap');
+:root{
+ --green:#27ae60;
+ --black:#192a56;
+ --light-color:#666;
+ --box-shadow:0.5rem 1.5rem rgba(0,0,0,.1);
+}
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+    font-family: 'Nunito',sans-serif;
+    background-color:white;
+} */
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 5.5rem;
+    scroll-behavior: smooth;
+}
+section{
+    padding:2rem 9%;
+}
+.btn{
+    margin-top: 1rem;
+    display: inline-block;
+    font-size: 1.7rem;
+    color: white;
+    background: var(--black);
+    border-radius: .5rem;
+    cursor: pointer;
+    padding: .8rem 3rem;
+ }
+ .btn:hover{
+    background: var(--green);
+    letter-spacing: .1rem;
+ }
+ .home{
+    
+        display: flex;
+        align-items: center;
+
+        padding-top: 9rem;
+    }
+.home .box-container .box{
+    flex: 1 1 30rem;
+    border: .1rem solid rgba(0,0,0,.3);
+    box-shadow: 0.5rem 1rem rgba(0,0,0,.1);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+   }
+   /* hibiscous */
+.home .content{
+    flex: 1 1 45rem;
+}
+.home .image {
+    flex: 1 1 45rem; 
+}
+.home img{
+    width: 100%;
+    color:#ffffff;
+    outline: .2rem solid #222;
+    transform: scale(.9);
+ }
+ .home .content h3{
+    color: var(--black);
+      font-size: 3rem;
+ }
+ .home  .content p{
+    color: var(--green);
+     font-size: 2.2rem;
+     padding: .5rem 0;
+     line-height:1.5;
+} 
+.home .content .stars i{
+    color:black;
+    font-size: 1.5rem;
+   }
+.home .content .quantity{
+    padding: 1rem;
+   }
+.home .content .quantity span{
+    font-size: 2rem;
+} 
+.home .quantity input{
+    font-size: 2rem;
+    padding: 2rem;
+    text-align: center;
+    background: rgba(0,0,0,.1);
+}
+.home .content  .price {
+font-weight: bolder;
+    color: var(--green);
+    font-size: 2rem;
+}
+.home .content .price span{
+    text-decoration:line-through ;
+    color: #999;
+    font-size: 1.5;
+    
+}
+
+
+
+.image{
+    display: grid;
+}
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns:auto auto auto;
+    grid-gap: 1.5px;
+    background-color:white;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .row-container  div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 20px;
+   
+  }
+  
+  .price{
+    grid-row-end: span 4;
+    text-align: center;
+
+   
+    top:20px;
+  }
+
+  a{
+     color: white;
+  }

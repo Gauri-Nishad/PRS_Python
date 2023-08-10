@@ -1,0 +1,54 @@
+{% extends "layout2.html" %}
+{% block body %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Login page</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v2.1.9/css/unicons.css"
+    />
+    <link rel="stylesheet" href="static/newoffer.css"/>
+  </head>
+  <body>
+  
+    <section class="Popular" id="Popular">
+      <h3 class="heading">RED CATEGORY</h3>
+      
+      <div class="box-container">
+        {% for det in detai %}
+        <div class="box"> 
+          <!-- <a href="#" class="fas fa-heart"></a>
+          <a href="#" class="fas fa-eye"></a> -->
+         <img src="https://images.pexels.com/photos/1615785/pexels-photo-1615785.jpeg?auto=compress&cs=tinysrgb&w=600" alt="rose">
+        
+         <h3>Name: {{det.name}}</h3> 
+         <h3>Price:{{det.price}}</h3> 
+         <h3>Location:<td>{{det.location}}</h3>
+         <h3>Soil Type:{{det.type}}</h3>  
+         <h3> Contact no: {{det.contact_no}}</h3>
+         <h3> Area: {{det.area}}</h3>
+         <h3> Surroundings: {{det.surround}}</h3>
+         <h3> Ownership: {{det.owner}}</h3>
+         <h3> Any debt: {{det.debt}}</h3>
+         <h3> Land Type:{{det.type}}</h3>
+             <h3> Description: {{det.subject}}</h3>
+                
+            </span>
+            <a href="/index2"  onclick="myFun()" class="btn">CONTACT ME</a> 
+                </div>
+                {% endfor %}
+                            
+            </div>
+        </section> 
+       
+       
+        </body>
+        </html>
+
+{% endblock %}

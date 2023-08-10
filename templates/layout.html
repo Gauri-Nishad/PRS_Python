@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+        <link rel="stylesheet" type = "text/css" href="/static/style.css" />
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initiasl-scale=1.0">
+   <title>Document</title>
+</head>
+
+<style>
+   
+/*CSS for Footer*/
+.footer{
+  background-color: darkblue;
+  color: white;
+  font-size: 15px;
+}
+.footer p{
+  text-align: center;
+  color: white;
+
+}
+.footer p a{
+  color: white;
+}
+.footer p a:hover{
+  text-decoration: none;
+}
+
+.nav{
+    position: sticky;
+    top:0;
+    width:100%;
+    height:50%;
+    padding:10px;
+    background-color:black;
+    display:flex;
+    z-index:1000;
+}
+.ul{
+    width:100%;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
+}
+.li{
+    color:white;
+    list-style: none;
+}
+.li:hover{
+    color:green;
+}
+
+.header #mk span{
+    text-align: center;
+    left: 300%;
+}
+#mk{
+    line-height:20vh;
+    font-size:4rem;
+    font-weight:bold;
+    margin:0 0 0 30px;
+    color:greenyellow;
+    font-family: sans-serif;
+    
+}
+#hotels{
+    line-height:20vh;
+    font-weight:bold;
+    font-size:4rem;
+    color:#404040;
+    font-family: sans-serif;
+}
+@media all and (max-width:400px){
+    #mk{
+        line-height:20vh;
+        font-size:3rem;
+        font-weight:bold;
+        margin:0 0 0 30px;
+        color:greenyellow;
+        font-family: sans-serif;
+    }
+    #hotels{
+        line-height:20vh;
+        font-weight:bold;
+        font-size:3rem;
+        color:#404040;
+        font-family: sans-serif;
+    }
+}
+
+.container {
+      position: relative;
+      font-family: monospace;
+      color: darkblue;
+      
+      font-size: 20px;
+      filter: contrast(15);
+      padding: 16px;
+     
+      
+    }
+    .container :hover{
+      color: white;
+
+    }
+    .word {
+      position: absolute;
+      top: 90%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      animation: switch 0.6s infinite ease-in-out;
+      min-width: 10%;
+      margin: auto;
+    }
+  
+    .word:nth-child(1) {
+      animation-delay: -7s;
+    }
+  
+    .word:nth-child(2) {
+      animation-delay: -6s;
+    }
+  
+    .word:nth-child(3) {
+      animation-delay: -5s;
+    }
+  
+    @keyframes switch {
+      0%,
+      5%,
+      100% {
+        filter: blur(0px);
+        opacity: 1;
+      }
+  
+      50%,
+      80% {
+        filter: blur(180px);
+        opacity: 0;
+      }
+    }
+  
+
+</style>
+<body>
+   <!-- <header class="header">
+      <div class="wrapper">
+         <h1>
+           <h1>POPERTY  RENTING  SYSTEM  FOR  AGRICULTURE PURPOSE </h1>
+      </div> -->
+
+   <!-- </header> -->
+   
+   <nav class="menu">
+     
+      <div class="wrapper">
+         <nav>
+         <ul> <a href="/dashboard">
+            <li>Admin</li>
+         </a>
+            
+            <a href="/about">
+               <li>About Us</li>
+            </a>
+            
+            <a href="/contact">
+               <li>Contact Us</li>
+
+            </a>
+
+            
+            <a href="/login">
+               <li>Landlord Log In</li>
+            </a>
+            
+
+            <a href="/newoffer2">
+              <li>Category</li>
+           </a>
+
+            <a href="/userlogin">
+               <li>Login</li>
+            </a>
+           
+            <a href="/">
+               <li>Home</li>
+            </a>
+            </nav>
+           
+            <span id="mk" >PROPERTY</span><span id="hotels">PALACE</span>
+      
+         </ul>
+          
+         </div>
+      </div> 
+  
+ 
+      {% block body %}
+    {% endblock %}
+
+
+    <footer class="footer">
+      <div class="wrapper">
+         <p>Author: Gauri Ramnihal Nishad<br>
+            <a href="gaurinishad18@gmail.com">gaurinishad18@gmail.com</a></p>
+      </div>
+   </footer>
+
+   <script>
+    function myFunction() {
+     alert("You are not registered yet! Please register");
+   }
+   </script>

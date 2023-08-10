@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Welcome back admin</h1>
+
+  <h3>CONTACTS</h3>
+
+
+      <table class='table'>
+        <table border="5" width="100%">
+        <thead>
+        
+          <tr>
+            <th>sno</th>
+            <th>name</th>
+            <th>email</th>
+            <th>contact_no</th>
+            <th>address</th>
+            <th>date</th>
+          </tr>
+      
+      </thead>
+      <tbody>
+      {% for contact in contacts %}
+        <tr>
+          <td>{{contact.sno}}</td>
+          <td>{{contact.name}}</td>
+          <td>{{contact.email}}</td>
+          <td>{{contact.contact_no}}</td>
+          <td>{{contact.address}}</td>
+          <td>{{contact.date}}</td>
+        </tr>
+       {% endfor %}
+      </tbody>
+
+
+
+
+
+     
+
+      <table class='table'>
+        <table border="5" width="100%">
+        <h3>LOGIN </h3>
+        <thead>
+          
+        <tr>
+          <th>sno</th>
+          <th>name</th>
+          <th>email</th>
+          <th>password</th>
+          <th>re_password</th>
+          <th>role</th>
+          <th>date</th>
+          
+        </tr>
+      
+      </thead>
+      <tbody>
+      {% for acc in accounts %}
+        <tr>
+          <td>{{acc.sno}}</td>
+          <td>{{acc.name}}</td>
+          <td>{{acc.email}}</td>
+          <td>{{acc.password}}</td>
+          <td>{{acc.re_password}}</td>
+          <td>{{acc.role}}</td>
+          <td>{{acc.date}}</td>
+        
+        </tr>
+       {% endfor %}
+      </tbody>
+      </table>
+
+      
+
+      <table class='table'>
+        <table border="5" width="100%">
+        <h3>LANDLORD DETAIL</h3>
+        <thead>
+          
+        <tr>
+          <th>sno</th>
+          <th>name</th>
+          <th>location</th>
+          <th>contact_no</th>
+          <th>area</th>
+          <th>price</th>
+          <th>surround</th>
+          <th>owner</th>
+          <th>debt</th>
+          <th>type</th>
+          <th>subject</th>
+         
+          <th>img</th>
+          <th>date</th>
+          
+        </tr>
+      
+      </thead>
+     
+      <tbody>
+      {% for det in details %}
+        <tr>
+          <td>{{det.sno}}</td>
+          <td>{{det.name}}</td>
+          <td>{{det.location}}</td>
+          <td>{{det.contact_no}}</td>
+          <td>{{det.area}}</td>
+          <td>{{det.price}}</td>
+          <td>{{det.surround}}</td>
+          <td>{{det.owner}}</td>
+          <td>{{det.debt}}</td>
+          <td>{{det.type}}</td>
+          <td>{{det.subject}}</td>
+          <td>{{det.img}}</td>
+          <td>{{det.date}}</td>
+        
+        </tr>
+       {% endfor %}
+      </tbody>
+      </table>
+</body>
+</html>

@@ -1,0 +1,10 @@
+{
+    "params":
+    {
+        "admin_user":"Admin",
+        "admin_pass":"admin@123",
+        "name":"Agriculture Agent",
+        "clay":"clay"
+
+    }
+}
